@@ -1,4 +1,4 @@
-mkdir "khaledd gamal"
+٢mkdir "khaledd gamal"
 cd "khaledd gamal"
 mkdir documents
 cd documents
@@ -12,10 +12,11 @@ touch file1.txt file2.txt file3.txt
  mkdir "/-"
  cd ../..
  cp -r "khaled gamal" my_documents
- ls
+ ls my documents 
  cat .hidden_file
  mv documents/file2.txt documents/file3.txt
  ls
-ls my documents
+ls my_documents
+cd
 rm -r "khaled gamal"
 ls ~
