@@ -1,1 +1,21 @@
-
+mkdir "khaledd gamal"
+cd "khaledd gamal"
+mkdir documents
+cd documents
+touch file1.txt file2.txt file3.txt
+ ls
+ touch .hidden_file
+ ls -a
+ nano file1.txt 
+ cat file1.txt
+ cd documents
+ mkdir "/-"
+ cd ../..
+ cp -r "khaled gamal" my_documents
+ ls
+ cat .hidden_file
+ mv documents/file2.txt documents/file3.txt
+ ls
+ls my documents
+rm -r "khaled gamal"
+ls ~
