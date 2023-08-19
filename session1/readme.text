@@ -1,22 +1,56 @@
-mkdir "khaledd gamal"
-cd "khaledd gamal"
-mkdir documents
-cd documents
-touch file1.txt file2.txt file3.txt
- ls
- touch .hidden_file
- ls -a
- nano file1.txt 
- cat file1.txt
- cd documents
- mkdir "/-"
- cd ../..
- cp -r "khaled gamal" my_documents
- ls my documents 
- cat .hidden_file
- mv documents/file2.txt documents/file3.txt
- ls
-ls my_documents
-cd
-rm -r "khaled gamal"
-ls ~
+khaled@pop-os:~$ mkdir "khaled gama"
+khaled@pop-os:~$ cd "khaled gama"
+khaled@pop-os:~/khaled gama$ mkdir "documents"
+khaled@pop-os:~/khaled gama$ cd "documents"
+khaled@pop-os:~/khaled gama/documents$ touch file1.txt~
+khaled@pop-os:~/khaled gama/documents$ touch file1.txt
+khaled@pop-os:~/khaled gama/documents$ touch file2.txt
+khaled@pop-os:~/khaled gama/documents$ touch file3.txt
+khaled@pop-os:~/khaled gama/documents$ ls
+file1.txt  file1.txt~  file2.txt  file3.txt
+khaled@pop-os:~/khaled gama/documents$ ls -l
+total 0
+-rw-rw-r-- 1 khaled khaled 0 أغس 19 16:58 file1.txt
+-rw-rw-r-- 1 khaled khaled 0 أغس 19 16:58 file1.txt~
+-rw-rw-r-- 1 khaled khaled 0 أغس 19 16:58 file2.txt
+-rw-rw-r-- 1 khaled khaled 0 أغس 19 16:59 file3.txt
+khaled@pop-os:~/khaled gama/documents$ ..
+..: command not found
+khaled@pop-os:~/khaled gama/documents$ cd ..
+khaled@pop-os:~/khaled gama$ ls
+documents
+khaled@pop-os:~/khaled gama$ ls -l
+total 4
+drwxrwxr-x 2 khaled khaled 4096 أغس 19 16:59 documents
+khaled@pop-os:~/khaled gama$ touch .hidden_file
+khaled@pop-os:~/khaled gama$ ls-a
+ls-a: command not found
+khaled@pop-os:~/khaled gama$ ls -a
+.  ..  documents  .hidden_file
+khaled@pop-os:~/khaled gama$ nano documents/file1.txt
+khaled@pop-os:~/khaled gama$ cat documents/file1.txt
+hello my name is khaled
+
+khaled@pop-os:~/khaled gama$ cd documents
+khaled@pop-os:~/khaled gama/documents$ mkdir -
+khaled@pop-os:~/khaled gama/documents$ cd -
+/home/khaled/khaled gama
+khaled@pop-os:~/khaled gama$ cp -r documents my_documents
+khaled@pop-os:~/khaled gama$ ls
+documents  my_documents
+khaled@pop-os:~/khaled gama$ ls my_documents
+-  file1.txt  file1.txt~  file2.txt  file3.txt
+khaled@pop-os:~/khaled gama$ cat .hidden_file
+khaled@pop-os:~/khaled gama$ mv documents/file2.txt documents/file3.txt my_documents
+khaled@pop-os:~/khaled gama$ ls
+documents  my_documents
+khaled@pop-os:~/khaled gama$ ls my_documents
+-  file1.txt  file1.txt~  file2.txt  file3.txt
+khaled@pop-os:~/khaled gama$ cd
+khaled@pop-os:~$ rm -r "khaled gama"
+khaled@pop-os:~$ ls ~
+ desktop  'khaledd gamal'  'سطح المكتب'   فيديو     موسيقى
+ gamal@   'khaled gamal'    صور           قوالب
+ @khaled   التنزيلات        عام           مستندات
+khaled@pop-os:~$ 
+
